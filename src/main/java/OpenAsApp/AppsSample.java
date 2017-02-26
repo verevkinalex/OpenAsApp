@@ -94,15 +94,4 @@ public class AppsSample {
 
     }
 
-    public void ListWithLocationData() {
-        driver.findElement(By.xpath("//h3[.='Use our sample files!']")).click();
-        driver.findElement(By.xpath("(//span[.='Use'])[2]")).click();
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
-
 }

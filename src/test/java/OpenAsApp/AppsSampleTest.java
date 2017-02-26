@@ -14,13 +14,5 @@ public class AppsSampleTest {
         appsSample.appSampleCreate();
         appsSample.SalespeopleList();
         appsSample.CreateExtension();
-
-        homePage = new HomePage();
-        homePage.login("v--alex@mail.ru", "axaxa111");
-        driver = homePage.getDriver();
-        appsSample = new AppsSample(driver);
-        appsSample.appSampleCreate();
-        appsSample.ListWithLocationData();
-        appsSample.CreateExtension();
     }
 }
