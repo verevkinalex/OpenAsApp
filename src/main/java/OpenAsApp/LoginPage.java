@@ -24,8 +24,14 @@ public class LoginPage {
     }
 
     public void logOut() {
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//a[@class='gn-icon'])[1]")));
-        driver.findElement(By.xpath("(//a[@class='gn-icon'])[1]")).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//md-icon[@class='material-icons']")));
+        driver.findElement(By.xpath("//md-icon[@class='material-icons']")).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        driver.findElement(By.xpath("//span[.='Log out']")).click();
         boolean email = driver.findElement(By.xpath("//form[@name='login.form']/md-input-container/input[@type='email']")).isDisplayed();
         Assert.assertTrue(email);
     }
