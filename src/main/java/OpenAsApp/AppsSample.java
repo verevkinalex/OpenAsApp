@@ -83,7 +83,6 @@ public class AppsSample {
         String expectedText = "Congratulations!";
         Assert.assertEquals(expectedText, actualText);
         driver.quit();
-
     }
 
 }
