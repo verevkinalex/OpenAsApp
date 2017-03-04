@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 public class AppsTest {
-    @Test
+    @Test(enabled = false)
     public void AppsCreating() {
         HomePage homePage = new HomePage();
         homePage.login("v--alex@mail.ru", "axaxa111");
