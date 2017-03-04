@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 public class AppsSampleTest {
-    @Test
-    public void AppsCreating() {
+    @Test(enabled = false)
+    public void AppsSample() {
         HomePage homePage = new HomePage();
         homePage.login("v--alex@mail.ru", "axaxa111");
         WebDriver driver = homePage.getDriver();
