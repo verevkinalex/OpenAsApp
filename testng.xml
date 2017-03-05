@@ -1,7 +1,13 @@
-<suite name="SuiteName">
-    <test name="TestName_1" preserve-order="true" >
+<suite name="AllTests">
+    <test name="AppsTest" preserve-order="true" >
         <classes>
             <class name="OpenAsApp.AppsTest">
+            </class>
+        </classes>
+    </test>
+    <test name="AppsTest1" preserve-order="true" >
+        <classes>
+            <class name="OpenAsApp.AppsSampleListTest">
             </class>
         </classes>
     </test>
