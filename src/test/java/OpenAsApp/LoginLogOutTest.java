@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 public class LoginLogOutTest {
-    @Test(enabled = false)
+    @Test
     public void loginTest ()
     {
         HomePage homePage = new HomePage();

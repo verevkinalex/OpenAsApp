@@ -1,0 +1,8 @@
+<suite name="SuiteName">
+    <test name="TestName_1" preserve-order="true" >
+        <classes>
+            <class name="OpenAsApp.AppsTest">
+            </class>
+        </classes>
+    </test>
+</suite>

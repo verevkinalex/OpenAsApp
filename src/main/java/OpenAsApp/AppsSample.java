@@ -49,6 +49,15 @@ public class AppsSample {
             e.printStackTrace();
         }
     }
+    public void ListWithLocationData() {
+        driver.findElement(By.xpath("//a[@class='wa-promotion-card promo-samples wa-big-button md-button md-ink-ripple layout-row flex-gt-sm-50 flex-none']")).click();
+        driver.findElement(By.xpath("(//span[.='Use'])[2]")).click();
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void CreateExtension() {
         driver.findElement(By.xpath("//button[@class='md-raised md-accent wa-app-wizard-navigation-button right md-button']")).click();
