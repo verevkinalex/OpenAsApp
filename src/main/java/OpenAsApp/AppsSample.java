@@ -91,7 +91,6 @@ public class AppsSample {
         String actualText = driver.findElement(By.xpath("//h2[@class='wa-view-subtitle wa-bold ng-scope']")).getText();
         String expectedText = "Congratulations!";
         Assert.assertEquals(expectedText, actualText);
-        driver.quit();
     }
 
 }

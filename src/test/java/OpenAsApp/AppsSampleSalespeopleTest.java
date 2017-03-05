@@ -4,9 +4,9 @@ package OpenAsApp;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-public class AppsSampleTest {
+public class AppsSampleSalespeopleTest {
     @Test
-    public void AppsSample() {
+    public void AppsSampleSalespeople() {
         HomePage homePage = new HomePage();
         homePage.login("v--alex@mail.ru", "axaxa111");
         WebDriver driver = homePage.getDriver();
