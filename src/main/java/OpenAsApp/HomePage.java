@@ -3,10 +3,13 @@ package OpenAsApp;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 
 public class HomePage {
@@ -18,9 +21,10 @@ public class HomePage {
         return driver;
     }
 
-    public HomePage() {
-        this.driver = new FirefoxDriver();
-        System.setProperty("webdriver.gecko.driver", "/home/alex/IDEA/OpenAsApp/geckodriver");
+    public HomePage() throws MalformedURLException {
+        this.driver = new RemoteWebDriver(
+                new URL("http://localhost:4444/wd/hub"),
+                DesiredCapabilities.chrome());
         wait = new WebDriverWait(driver, 10000);
     }
 

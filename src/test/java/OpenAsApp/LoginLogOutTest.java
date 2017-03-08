@@ -6,13 +6,15 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.net.MalformedURLException;
+
 public class LoginLogOutTest {
 
     private WebDriver driver;
     private HomePage homePage;
 
     @BeforeTest
-    public void beforeTest() {
+    public void beforeTest() throws MalformedURLException {
         homePage = new HomePage();
         driver = homePage.getDriver();
     }
