@@ -10,26 +10,22 @@ import java.net.MalformedURLException;
 
 public class LoginLogOutTest {
 
-    private WebDriver driver;
     private HomePage homePage;
 
     @BeforeTest
     public void beforeTest() throws MalformedURLException {
+        System.out.println("Start");
         homePage = new HomePage();
-        driver = homePage.getDriver();
+        System.out.println("Start1");
     }
 
     @Test
     public void loginTest() {
+        System.out.println("Start3");
         homePage.login("v--alex@mail.ru", "axaxa111");
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPage loginPage = new LoginPage();
         loginPage.checkLogin();
         loginPage.logOut();
     }
 
-    @AfterTest
-    public void afterTest()
-    {
-        driver.quit();
-    }
 }

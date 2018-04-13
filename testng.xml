@@ -5,22 +5,22 @@
             </class>
         </classes>
     </test>
-    <!--<test name="AppsTest" preserve-order="true" >-->
-        <!--<classes>-->
-            <!--<class name="OpenAsApp.AppsTest">-->
-            <!--</class>-->
-        <!--</classes>-->
-    <!--</test>-->
-    <!--<test name="AppsSampleSalespeopleTest" preserve-order="true" >-->
-        <!--<classes>-->
-            <!--<class name="OpenAsApp.AppsSampleSalespeopleTest">-->
-            <!--</class>-->
-        <!--</classes>-->
-    <!--</test>-->
-    <!--<test name="AppsSampleListTest" preserve-order="true" >-->
-        <!--<classes>-->
-            <!--<class name="OpenAsApp.AppsSampleListTest">-->
-            <!--</class>-->
-        <!--</classes>-->
-    <!--</test>-->
+    <test name="AppsTest" preserve-order="true" >
+        <classes>
+            <class name="OpenAsApp.AppsTest">
+            </class>
+        </classes>
+    </test>
+    <test name="AppsSampleSalespeopleTest" preserve-order="true" >
+        <classes>
+            <class name="OpenAsApp.AppsSampleSalespeopleTest">
+            </class>
+        </classes>
+    </test>
+    <test name="AppsSampleListTest" preserve-order="true" >
+        <classes>
+            <class name="OpenAsApp.AppsSampleListTest">
+            </class>
+        </classes>
+    </test>
 </suite>

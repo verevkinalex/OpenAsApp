@@ -7,14 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class LoginPage {
-    private WebDriver driver;
-    private WebDriverWait wait;
+public class LoginPage extends Driver{
 
-    public LoginPage(WebDriver driver) {
-        this.driver = driver;
-        wait=new WebDriverWait(driver,5000);
-    }
+
 
     public void checkLogin() {
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[.='Apps']")));

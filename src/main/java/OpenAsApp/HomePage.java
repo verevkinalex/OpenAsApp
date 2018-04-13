@@ -2,6 +2,7 @@ package OpenAsApp;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -12,25 +13,15 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
-public class HomePage {
 
-    private WebDriver driver;
-    private WebDriverWait wait;
+public class HomePage extends Driver {
 
-    public WebDriver getDriver() {
-        return driver;
-    }
 
-    public HomePage() throws MalformedURLException {
-        this.driver = new RemoteWebDriver(
-                new URL("http://localhost:4444/wd/hub"),
-                DesiredCapabilities.chrome());
-        wait = new WebDriverWait(driver, 10000);
-    }
+
 
     public void login(String login, String password) {
 
-        driver.get("https://www.openasapp.net");
+        driver.get("https://www.360living.de");
         driver.findElement(By.xpath("//a[@title='Sign up']")).click();
         try {
             Thread.sleep(15000);
